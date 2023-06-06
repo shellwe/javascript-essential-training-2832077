@@ -5,7 +5,7 @@
  * Class expression:  const Name = class {}
  */
 
-class Backpack {
+export class Backpack {
   constructor(
     // Defines parameters:
     name,
@@ -37,4 +37,33 @@ class Backpack {
   }
 }
 
-export default Backpack;
+export class Laptop {
+  constructor(
+    brand,
+    screenSize,
+    ram,
+    ledKeyboard,
+    storage,
+    processorBrand,
+    speed,
+    cores,
+    sdCardInserted
+  ) {
+    this.brand = brand;
+    this. screenSize = screenSize;
+    this.ram = ram;
+    this.ledKeyboard = ledKeyboard;
+    this.storage = storage;
+    this.processor = {
+      brand: processorBrand,
+      speed: speed,
+      cores: cores
+    }
+    this.sdCardInserted = sdCardInserted;
+  }
+
+  removeSdCard(removeSdCard) {
+    this.sdCardInserted = removeSdCard;
+  }
+
+}

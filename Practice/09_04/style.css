@@ -22,3 +22,15 @@ body {
   height: 6rem;
   background-color: hsl(0, 0%, 90%);
 }
+
+.background{
+  background-color:aquamarine;
+}
+
+.clicked{
+  background:blue !important;
+}
+
+.body-color {
+  background-color: mediumseagreen;
+}
